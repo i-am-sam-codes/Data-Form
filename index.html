@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Data Form</title>
+  </head>
+  <body>
+    <nav>
+      <div id="nav-name">Data Form</div>
+    </nav>
+
+    <main>
+      <div id="form-container">
+        <form id="form">
+          <p>Welcome! Please fill out the form below.</p>
+          <fieldset>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required />
+          </fieldset>
+          <fieldset>
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" required />
+          </fieldset>
+          <fieldset>
+            <label for="zip-code">Zip Code</label>
+            <input type="text" id="zip-code" name="zip-code" required />
+          </fieldset>
+          <fieldset>
+            <label for="password">Password</label>
+            <input type="text" id="password" name="password" required />
+          </fieldset>
+          <fieldset>
+            <label for="password-confirmation">Confirm Password</label>
+            <input
+              type="text"
+              id="password-confirmation"
+              name="password-confirmation"
+              required
+            />
+          </fieldset>
+
+          <button type="submit" class="submit" id="sub-btn">Submit</button>
+        </form>
+      </div>
+
+      <div id="submitMessage">
+        <p>
+          Thanks now I have your data!
+          <span>highfive 🖐️</span>
+        </p>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
