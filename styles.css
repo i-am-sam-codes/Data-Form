@@ -84,3 +84,24 @@ p {
   display: none;
   background-color: var(--message-color);
 }
+
+input[type="email"] {
+  appearance: none;
+  width: 100%;
+  border: 1px solid #333;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input.invalid {
+  border-color: #900;
+  background-color: #fdd;
+}
+
+input:focus.invalid {
+  outline: none;
+}
+
+.error {
+  color: red;
+}

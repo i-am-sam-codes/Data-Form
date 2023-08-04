@@ -17,19 +17,23 @@
         <form id="form">
           <fieldset>
             <label for="email">Email</label>
-            <input type="text" id="email" name="email" required />
+            <input type="text" id="email" name="email" required minlength="8" />
+            <span class="error" aria-live="polite"></span>
           </fieldset>
           <fieldset>
             <label for="country">Country</label>
             <input type="text" id="country" name="country" required />
+            <span class="error" aria-live="polite"></span>
           </fieldset>
           <fieldset>
             <label for="zip-code">Zip Code</label>
             <input type="text" id="zip-code" name="zip-code" required />
+            <span class="error" aria-live="polite"></span>
           </fieldset>
           <fieldset>
             <label for="password">Password</label>
             <input type="text" id="password" name="password" required />
+            <span class="error" aria-live="polite"></span>
           </fieldset>
           <fieldset>
             <label for="password-confirmation">Confirm Password</label>
@@ -39,6 +43,7 @@
               name="password-confirmation"
               required
             />
+            <span class="error" aria-live="polite"></span>
           </fieldset>
 
           <button type="submit" class="submit" id="sub-btn">Submit</button>
